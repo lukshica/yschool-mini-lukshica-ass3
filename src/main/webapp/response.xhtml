@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Response Page </title>
+    </h:head>
+    <h:body>
+      <center>
+            <h:form>
+                <p:commandLink action="index" value="Home" /> <br> </br>
+                <p:commandLink action="registration" value="Back" /><br></br>
+                <h:message for="#{null}" errorStyle="color : red;" infoStyle="color : green"/> 
+                
+                <p:panel header="Registration Success" >
+                <p:panelGrid columns="2">
+
+                <h:outputLabel value="Admission No :" for="admno"/>
+                <p:inputText value="#{myManagedBean.selectedStudent.admno}" id="admno" disabled="true"/>
+                
+                <h:outputLabel value="Student Name:" for="name"/>
+                <p:inputText value="#{myManagedBean.selectedStudent.name}" id="name" disabled="true"/>             
+
+                <h:outputLabel value="Address:" for="address"/>
+                <p:inputText value="#{myManagedBean.selectedStudent.address}" id="address" disabled="true" /> 
+                
+                <h:outputLabel value="Grade:" for="grade"/>
+                <p:inputText value="#{myManagedBean.selectedStudent.grade}" id="grade" disabled="true"/>  
+
+                <h:outputLabel value="Parent Name :" for="parent"/>
+                <p:inputText value="#{myManagedBean.selectedStudent.parentName}" id="parent" disabled="true"/> 
+                
+                </p:panelGrid>
+                </p:panel>
+          </h:form>  
+     </center>
+    </h:body>
+</html>
+
