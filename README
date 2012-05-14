@@ -1,0 +1,13 @@
+This is a project with jsf2
+The description of the project:
+a) Student registration page will have the following fields to be filled.
+	Student Name, Address, Grade (Year 1 to 13 loaded in ComboBox), Parent Name
+b) User can enter these values and click "Register"
+c) Here Student Name and Grade are mandatory fields
+d) System will validate for those mandatory fields and will show a error message in the response page
+e) If validation succeeds, show up the details of the registered student.
+
+How to start
+
+1) Run mvn clean install from top of the project
+2) run mvn clean jetty:run within yschool main module
